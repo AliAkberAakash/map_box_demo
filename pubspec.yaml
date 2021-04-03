@@ -1,0 +1,45 @@
+name: flutter_app
+description: A new Flutter application.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # GetX
+  get: ^4.1.2
+  # Dio for http connection
+  dio: ^4.0.0
+  # Data connection checker
+  data_connection_checker: ^0.3.4
+  # Value Equality
+  equatable: ^2.0.0
+  # Dependency injection
+  get_it: ^6.0.0
+  # Shared Preferences
+  shared_preferences: ^2.0.5
+  # Map box
+  mapbox_gl: ^0.11.0
+  # location
+  location: ^4.1.1
+  # path provider
+  path_provider: ^2.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
