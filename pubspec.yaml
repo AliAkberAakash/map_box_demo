@@ -1,4 +1,4 @@
-name: flutter_app
+name: mapbox_demo
 description: A new Flutter application.
 
 publish_to: 'none'
@@ -13,23 +13,21 @@ dependencies:
     sdk: flutter
 
   # GetX
-  get: ^4.1.2
+  get: ^3.24.0 #^4.1.2
   # Dio for http connection
-  dio: ^4.0.0
+  dio: ^3.0.10 #^4.0.0
   # Data connection checker
   data_connection_checker: ^0.3.4
   # Value Equality
-  equatable: ^2.0.0
-  # Dependency injection
-  get_it: ^6.0.0
+  equatable: ^1.2.5 #^2.0.0
   # Shared Preferences
-  shared_preferences: ^2.0.5
+  shared_preferences: ^0.5.12+2 #^2.0.5
   # Map box
   mapbox_gl: ^0.11.0
   # location
-  location: ^4.1.1
+  location: ^2.5.3 #^4.1.1
   # path provider
-  path_provider: ^2.0.1
+  path_provider: ^1.6.27 #^2.0.1
 
 dev_dependencies:
   flutter_test:

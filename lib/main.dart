@@ -1,11 +1,25 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:location/location.dart';
 import 'di/dependency_injection.dart';
 import 'ui/features/home/home_page.dart';
 import 'utils/my_colors.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
   setup();
+  await getPermission();
   runApp(MyApp());
+}
+
+getPermission() async{
+  if (!kIsWeb) {
+    final location = Location();
+    final hasPermissions = await location.hasPermission();
+    if (hasPermissions != PermissionStatus.GRANTED) {
+      await location.requestPermission();
+    }
+  }
 }
 
 class MyApp extends StatelessWidget {
